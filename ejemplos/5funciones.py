@@ -1,4 +1,4 @@
-#Definimos una funcion sin parametros
+#Definimos una funcion SIN PARAMETROS
 def saludar():
     print("Hola que tal ")
 
@@ -6,7 +6,8 @@ def saludar():
 saludar()
 saludar()
 
-#Definir funciones que reciben y devuelven parametros
+#----------------------------------------------------------
+#Definir funciones que RECIBENy DEVUELVEN PARAMETROS
 def saludarConNombre(nombre):
     saludo = "Hola que tal " + nombre
     return saludo
@@ -15,10 +16,12 @@ def saludarConNombre(nombre):
 nombre = input("Introduce tu nombre: ")
 saludo = saludarConNombre(nombre)
 print(saludo)
+
 nombre2 = input("Introduce tu nombre 2: ")
 saludo2 = saludarConNombre(nombre2)
 print(saludo2)
 
+#----------------------------------------------------------
 #Funciones con múltiples parámetros
 def calcular_area(base, altura):
     area = base * altura / 2
