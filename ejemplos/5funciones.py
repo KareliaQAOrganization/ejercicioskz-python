@@ -7,7 +7,7 @@ saludar()
 saludar()
 
 #----------------------------------------------------------
-#Definir funciones que RECIBENy DEVUELVEN PARAMETROS
+#Definir funciones que RECIBEN y DEVUELVEN PARAMETROS
 def saludarConNombre(nombre):
     saludo = "Hola que tal " + nombre
     return saludo

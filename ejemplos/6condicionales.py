@@ -15,3 +15,9 @@ nota = float(input("Introduce tu nota del examen: "))
 mensaje = notaFinal(nota)
 #imprimimos el mensaje con la nota final
 print(mensaje)
+
+
+#2Llamamos a nota final para que nos diga el mensaje
+mensaje2 = "Su nota final es: ", notaFinal(nota)
+#imprimimos el mensaje con la nota final
+print(mensaje2)
