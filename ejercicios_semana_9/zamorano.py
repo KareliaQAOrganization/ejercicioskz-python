@@ -2,25 +2,22 @@
 #Pregunta cuántas notas quiere introducir la usuaria
 #Usa un bucle para pedir cada nota
 #Guarda todas las notas en una lista
-
 #PARTE 2: Validación (condicional)
 #Si la usuaria introduce una nota menor que 0 o mayor que 10:
 #NO la guardes
 #Muestra: "Nota inválida"
 #(aquí puedes usar continue si quieres)
-
-#🔹 PARTE 3: Cálculos (operaciones)
+#PARTE 3: Cálculos (operaciones)
 #Con las notas válidas:
 #Calcula la suma total
 #Calcula la media
-
-#🔹 PARTE 4: Resultado (condicional)
+#PARTE 4: Resultado (condicional)
 #Si la media ≥ 5 → mostrar "Aprobado"
 #Si la media < 5 → mostrar "Suspendido"
 
 cantidad = int(input("Cuántas notas quiere introducir?: "))
 
-def pedir_notas(cantidad):
+def sumar_notas(cantidad):
     notas = []
     total = 0
     
@@ -48,7 +45,7 @@ def resultado(notas, media):
         else:
             print("Suspendido")
 
-notas, total = pedir_notas(cantidad)
+notas, total = sumar_notas(cantidad)
 media = calcular_media(notas, total)
 
 print("Las notas introducidas son:", notas)
@@ -56,10 +53,3 @@ print("La suma total es: ", total)
 print("La media de las notas válidas es:", media)
 
 
-
-
-
-#🔹 PARTE 5: Extra (para subir nota 😉)
-#Muestra:
-#Nota más alta
-#Nota más baja
