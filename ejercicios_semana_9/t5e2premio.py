@@ -4,20 +4,16 @@
 
 cantidad = 5
 
-def pedir_colores(cantidad):
-    colores = []
+def color():
     
     for i in range(cantidad):
         color = input("Escribe un color: ")
         if color == 'azul':
-            colores.append(color)
             print("PREMIO CONSEGUIDO")
-            break
+            break:
+            
         else:
             print("Prueba con otro color")
-    return colores
-
-colores = pedir_colores(cantidad)
 
 
 

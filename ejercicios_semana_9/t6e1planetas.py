@@ -4,18 +4,24 @@
 #Muestra el planeta correspondiente.
 #Si el número es inválido, muestra un mensaje de error.
 
-#------------------ CORRECTO
-#posicion = 0 ,          1,       2, ..... etc.
-planetas = ["Mercurio", "Venus", "Tierra", "Marte", "Júpiter", "Saturno", "Urano", "Neptuno"]
 
-numero = int(input("Escribe un numero entre 1 al 8: "))
-posicion = numero - 1
-planeta = 8
 
-if numero <= planeta: 
-    print("El planeta correspondiente es:", (planetas[posicion]))
-else:
-    print("Error: El número es inválido")
+def mostrar_planetas(numero):
+
+    planetas = ["Mercurio", "Venus", "Tierra", "Marte", "Júpiter", "Saturno", "Urano", "Neptuno"]
+
+    if numero <= planeta and numero >= 1: 
+        print("El planeta correspondiente es:", (planetas[posicion]))
+    else:
+        print("Error: El número es inválido")
+
+def main():
+    numero = int(input("Escribe un numero entre 1 al 8: "))
+    posicion = numero - 1
+    planeta = 8
+    print mostrar_planetas(numero)
+
+main()
 
 
 

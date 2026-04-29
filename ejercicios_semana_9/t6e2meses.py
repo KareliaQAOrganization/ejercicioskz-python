@@ -4,7 +4,7 @@
 #Muestra el mes correspondiente.
 #Si el mes es junio, muestra además el mensaje: EL MEJOR MES.
 
-#posicion = 0 ,    1,         2, ..... etc.
+
 meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
 
 numero = int(input("Escribe un numero entre 1 al 12: "))
@@ -13,13 +13,13 @@ mes_letras = 12
 mes_mejor = 6
 
 if numero <= mes_letras:
-    print("El mes correspondiente es:", (meses[posicion]))  
+    print("El mes correspondiente es:", (meses[posicion]))
+    if numero == mes_mejor:
+        print("EL MEJOR MES")
 else:
     print("No es un número válido")
 
 
-if numero == mes_mejor:
-    print("EL MEJOR MES")
-else:
-    print()
+
+
 

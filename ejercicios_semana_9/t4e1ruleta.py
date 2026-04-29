@@ -10,7 +10,7 @@ def ruleta(color):
         print("Su fortuna elegida es: felicidad y optimismo")
     elif color == 'morado':
         print("Su fortuna elegida es: sabiduría y creatividad")
-    elif color != 'rojo' or 'verde' or 'azul' or 'amarillo' or 'morado':
+    else:
         print("No es un color válido")
     return()
 
